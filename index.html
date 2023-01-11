@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>Netflix Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbe7634402.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">USER</a></li>
+                    <li><a href="">MOVIE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="main-title">World Largest Movie Browsing Platform</h1>
+            <p>At Netflix, we want to entertain the world. Whatever your taste, and no matter where you live, we give you access to best-in-class TV series, documentaries, feature films and mobile games. Our members control what they want to watch, when they want it, with no ads, in one simple subscription.
+            <br>We"re streaming in more than 30 languages and 190 countries.</p>
+            <a href="" class="visit-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+                    <!--- course Section -->
+    <section class="course" id="user">
+        <h1>Who is Watching ?</h1>
+        <p>Please Choose One</p>
+
+        <div class="row">
+            <div class="user-col">
+                <img src="images/profile1.png">
+                <h3>Kids</h3>
+                <p>This account is for people who are below 18 years old. Many unsuitable content will not appear and its for young people to entertain and relax. Content such as superheros, games and interesting facts about life may be suitable.</p>
+            </div>
+            <div class="user-col">
+                <img src="images/profile2.png">
+                <h3>Family</h3>
+                <p>The account is suggested to be use while watching with more than 1 person around you. Many content/movies related to action, horror, comedy and TV shows would likely to be suggested since most of these contents are suitable for groups and it is very fun to watch.</p>
+            </div>
+            <div class="user-col">
+                <img src="images/profile3.png">
+                <h3>Personal</h3>
+                <p>Various movies would be suggested related to your hobbies and interest. You can choose any movies that suit you like romance, anime would be highly recommended since you can have the most relaxing time in your life without anybody bothering you. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Movies -->
+    <section class="movies">
+        <h1 class="latest">Our Latest Movies</h1>
+        <div class="row">
+            <div class="movie-col">
+                <img src="images/batman.png">
+                <div class="layer">
+                    <h3>ACTION</h3>
+                </div>
+            </div>
+            <div class="movie-col">
+                <img src="images/crashlanding.png">
+                <div class="layer">
+                    <h3>ROMANCE</h3>
+                </div>
+            </div>
+            <div class="movie-col">
+                <img src="images/onepiece.png">
+                <div class="layer">
+                    <h3>ANIME</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+
+    <section class="comment">
+        <h1 class="comment-title">Comment From Others</h1>
+        <p>Feel Free To Leave A Comment Down Below</p>
+
+        <div class="row">
+            <div class="comment-col">
+                <img src="images/subprofile1.png">
+                <div>
+                    <p>
+                        Neflix is absolutely awsome, I watched with my family and we completely enjoyed the movies. There were so many great movies in here!
+                    </p>
+                    <h3>
+                        Smiley
+                    </h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="comment-col">
+                <img src="images/subprofile2.png">
+                <div>
+                    <p>
+                        I enjoyed watching about other animals in the safari and zoo :D. The documentary movies/films were so high quality that I thought I was living in a real safari!
+                    </p>
+                    <h3>
+                        Panda
+                    </h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Action Section -->
+
+    <section class="cta">
+        <h1>Contact Us For More Infomation</h1>
+        <a href="" class="visit-btn">Click Here</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Stories move us.
+            They make us feel more emotion, see new perspectives,
+            and bring us closer to each other.
+        </p>
+        <p class="own">Made By Bao Thai Ha 1/11/2023</p>
+    </section>
+
+
+                        <!--- JAVASCRIPT CODES --->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
